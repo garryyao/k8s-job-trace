@@ -1,6 +1,6 @@
 {
   "name": "k8s-job-trace",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Track Kubernetes Job completion with JavaScript",
   "author": "Garry Yao",
   "license": "ISC",
