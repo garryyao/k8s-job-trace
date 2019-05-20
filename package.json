@@ -1,0 +1,29 @@
+{
+  "name": "k8s-job-trace",
+  "version": "0.0.1",
+  "description": "Track Kubernetes Job completion with JavaScript",
+  "author": "Garry Yao",
+  "license": "ISC",
+  "main": "index.js",
+  "bin": {
+    "k8s-job-trace": "index.js"
+  },
+  "scripts": {
+    "test": "test/success.sh && ! test/fail.sh && ! test/timeout.sh && ! test/pull-error.sh",
+    "lint": "eslint ."
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "kubernetes",
+    "job",
+    "kubectl"
+  ],
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.3.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "prettier": "^1.17.1"
+  }
+}

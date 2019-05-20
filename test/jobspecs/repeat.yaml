@@ -1,0 +1,15 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: repeat
+spec:
+  activeDeadlineSeconds: 8
+  template:
+    spec:
+      containers:
+        - name: repeat
+          image: busybox
+          # to time out
+          command: ["sh", "-c", "while true; do echo waiting...; sleep 1;done"]
+      restartPolicy: Never
+  backoffLimit: 4

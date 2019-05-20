@@ -1,0 +1,14 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: pi
+spec:
+  template:
+    spec:
+      containers:
+        - name: pi
+          image: perl
+          # It computes π to some degree
+          command: ["perl",  "-Mbignum=bpi", "-wle", "print bpi(800)"]
+      restartPolicy: Never
+  backoffLimit: 4
