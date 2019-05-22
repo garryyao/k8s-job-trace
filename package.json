@@ -20,6 +20,10 @@
     "job",
     "kubectl"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/garryyao/k8s-job-trace.git"
+  },
   "devDependencies": {
     "eslint": "^5.16.0",
     "eslint-config-prettier": "^4.3.0",
